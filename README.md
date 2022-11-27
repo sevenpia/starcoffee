@@ -5,7 +5,7 @@
 
 [main(master) 브랜치로 이동](https://github.com/sevenpia/starcoffee) <br/>
 
-[DEMO](https://sevenpia.github.io/starcoffee/ target="\_blank") <br/>
+[DEMO](https://sevenpia.github.io/starcoffee/)<br/>
 
 ![Starbucks](https://raw.githubusercontent.com/ParkYoungWoong/starbucks-vanilla-app/master/_assets/main_screenshot.jpg)
 
