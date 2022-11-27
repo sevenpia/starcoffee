@@ -24,8 +24,7 @@ fadeEls.forEach(function (fadeEl, index) {
 // 메인 비주얼이미지 - 요소 순서대로 나타나기
 
 const fadeEls = document.querySelectorAll('.visual .fade-in');
-console.log(fadeEls);
-
+// console.log(fadeEls);
 fadeEls.forEach(function (fadeEl, index) {
   gsap.to(fadeEl, 1, {
     delay: (index + 1) * 0.7,
@@ -83,7 +82,11 @@ new Swiper('.awards .swiper-container', {
   },
   loop: true,
   spaceBetween: 30,
-  slidesPerView: 5
+  slidesPerView: 5,
+  navigation: {
+    prevEl: '.awards .swiper-prev ',
+    nextEl: '.awards .swiper-next',
+  }
 })
 
 /* 프로모션 보여지기 토글만들기  */

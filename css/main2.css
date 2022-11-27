@@ -145,7 +145,7 @@ header > .inner {
   height: 120px;
 }
 
-.logo {
+header .logo {
   height: 75px;
   position: absolute;
   top: 0;
@@ -742,4 +742,117 @@ section.rewards .btn.gift {
 
 .awards .inner .swiper-container {
   width: 100%;
+}
+
+.awards .swiper-prev,
+.awards .swiper-next {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  transition: 0.4s;
+}
+.awards .swiper-prev {
+  left: -100px;
+}
+.awards .swiper-next {
+  right: -100px;
+}
+.awards .swiper-prev:hover,
+.awards .swiper-next:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* footer */
+
+footer {
+  background-color: #272727;
+  border-top: 2px solid #666;
+}
+footer .inner {
+  padding: 40px 0 60px 0;
+}
+
+footer ul.fmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul.fmenu li {
+  position: relative;
+}
+
+footer ul.fmenu li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #999;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  margin: auto;
+}
+
+footer ul.fmenu li:last-child::after {
+  display: none;
+}
+
+footer ul.fmenu li a {
+  color: #efefef;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 15px;
+  display: block;
+}
+footer ul.fmenu li a.green {
+  color: #690;
+}
+footer .btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer .btn-group a.btn {
+  font-size: 12px;
+  margin-right: 10px;
+}
+footer .btn-group a.btn:last-child {
+  margin-right: 0;
+}
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color: #ccc;
+}
+footer .info span {
+  margin-right: 20px;
+}
+footer .info span:last-child {
+  margin-right: 0px;
+}
+
+footer p.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  padding: 10px;
+}
+footer img.logo {
+  margin: 30px auto 0;
 }
