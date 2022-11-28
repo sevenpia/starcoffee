@@ -8,6 +8,8 @@ body {
   font-family: "Noto Sans KR", arial, sans-serif;
   font-size: 16px;
   color: #333;
+  min-width: 1900px;
+  /* overflow-x: hidden; */
 }
 ul,
 li {
@@ -240,6 +242,21 @@ li.item .item__name {
   padding: 0 0 15px 0px;
 }
 
+header .badges {
+  position: absolute;
+  top: 132px;
+  right: 12px;
+}
+header .badges .badge {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/******************  visual ***********************/
+
 section.visual {
   background: url("../images/visual_bg.jpg");
   background-position: center;
@@ -362,7 +379,7 @@ section.visual {
   align-items: center;
 }
 
-.notice-line .inner .inner__left .material-symbols-outlined {
+.notice-line .inner .inner__left .material-icons {
   font-size: 36px;
   color: #fff;
 }
@@ -389,7 +406,7 @@ section.visual {
   align-items: center;
 }
 
-.notice-line .inner .inner__right .upload_icon .material-symbols-outlined {
+.notice-line .inner .inner__right .upload_icon .material-icons {
   font-size: 36px;
   cursor: pointer;
 }
@@ -855,4 +872,23 @@ footer p.copyright {
 }
 footer img.logo {
   margin: 30px auto 0;
+}
+
+#gotop {
+  width: 42px;
+  height: 42px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#gotop .material-icons {
 }

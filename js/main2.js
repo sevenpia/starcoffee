@@ -1,3 +1,82 @@
+/* 배지 보이기 숨기기 처리 */
+
+const badgeEl = document.querySelector('header .badges')
+const goTop = document.querySelector('#gotop')
+
+/* 요소를 스크롤 움직임양에 따라 사라지도록 또는 보이도록 한다. */
+
+/* window.addEventListener('scroll', _.throttle(function () {
+  console.log(scrollY);
+  if (window.scrollY > 500) { */
+/* 배지가 보이지 않도록 */
+// badgeEl.style.display = 'none'
+// gsap.to(요소, 시간,옵션)
+/*     gsap.to(badgeEl, 0.6, {
+      opacity: 0,
+      display: 'none'
+    })
+  } else { */
+/* 배지가 보이도록 */
+// badgeEl.style.display = 'block'
+
+/*     gsap.to(badgeEl, 0.6, {
+      opacity: 1,
+      display: 'block'
+    })
+  }
+}, 300)) */
+
+// window.addEventListener('scroll', _.throttle(function () { }, 300))
+window.addEventListener('scroll', _.throttle(function () {
+  console.log(scrollY)
+
+  if (window.scrollY > 500) {
+    /* 배지가 보이지 않도록 처리 */
+    // badgeEl.style.display = 'none'
+
+    gsap.to(badgeEl, 0.6, {
+      opacity: 0,
+      display: 'none'
+    })
+    // gotop 은 보이도록 
+    gsap.to(goTop, 0.2, {
+      opacity: 1,
+      x: 0
+    })
+
+  }
+  else {
+    /* 배지가 보이도록 처리 */
+    // badgeEl.style.display = 'block'
+    gsap.to(badgeEl, 0.6, {
+      opacity: 1,
+      display: 'block'
+    })
+
+    //gotop  보이지 않도록
+    gsap.to(goTop, 0.2, {
+      opacity: 0,
+      x: 100
+    })
+  }
+}, 300))
+
+// gotop 버튼을 클릭하면 위로 올라가기 
+
+goTop.addEventListener('click', function () {
+  gsap.to(window, 0.7, {
+    scrollTo: 0
+  })
+})
+
+
+/* goTop.addEventListener('click', function () {
+  document.documentElement.style.scrollBehavior = "smooth";
+  document.documentElement.scrollTop = 0;
+}) */
+
+
+
 // 요소 순서대로 나타나기
 // const fadeEls = document.querySelectorAll('.visual .fade-in');
 
@@ -183,3 +262,12 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller())
 })
+
+// 연도계산 
+
+const thisYear = document.querySelector('.this-year')
+
+thisYear.textContent = new Date().getFullYear();
+// thisYear.textContent = new Date().getDay();
+
+

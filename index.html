@@ -51,12 +51,24 @@
   <link rel="stylesheet" href="./css/main2.css" />
 
   <!--GSAP & ScrollToPlugin-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
     integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
     crossorigin="anonymous"></script>
+
+
+  <!--Lodash :  scrollY 의 양을 적절히 조절한다.  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+    integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+    crossorigin="anonymous"></script>
+
   <!--Swiper-->
   <!--  강의내용
   <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
@@ -74,10 +86,7 @@
   <!--ScrollMagic-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 
-  <!--Lodash-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
-    integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
-    crossorigin="anonymous"></script>
+
 
   <script defer src="./js/youtube2.js"></script>
   <script defer src="./js/main2.js"></script>
@@ -297,9 +306,17 @@
         </li>
 
       </ul>
-
-
     </div> <!-- inner -->
+
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge3.jpg" alt="badge">
+      </div>
+      <div class="badge">
+        <img src="./images/badge2.jpg" alt="badge">
+      </div>
+    </div>
+
   </header> <!-- header -->
 
 
@@ -345,14 +362,14 @@
           </div> <!-- swiper_container -->
 
           <a href="javascript:void(0)" class="plus_icon more">
-            <span class="material-symbols-outlined">add_circle</span>
+            <span class="material-icons">add_circle_outline</span>
           </a>
         </div>
         <div class="inner__right">
           <h2>스타벅스 이벤트</h2>
           <div class="upload_icon">
-            <span class="material-symbols-outlined">
-              upload
+            <span class="material-icons">
+              file_upload
             </span>
           </div>
         </div>
@@ -574,6 +591,11 @@
 
     </div> <!-- inner -->
   </footer>
+
+  <div id="gotop">
+    <div class="material-icons"> arrow_upward</div>
+  </div>
+
 </body>
 
 </html>
