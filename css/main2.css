@@ -734,7 +734,7 @@ section.rewards .btn.gift {
 .favorite .txt_group .more {
 }
 
-/* reserve-store */
+/******************  reserve-store *******************/
 .reserve-store {
   background-image: url(../images/reserve_store_bg.jpg);
   background-repeat: no-repeat;
@@ -747,6 +747,40 @@ section.rewards .btn.gift {
   height: 600px;
 }
 
+.reserve-store .medal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 334px;
+  height: 334px;
+  perspective: 600px;
+}
+.reserve-store .medal:hover {
+}
+.reserve-store .mall {
+  width: 334px;
+  height: 334px;
+  backface-visibility: hidden;
+  perspective: 300px;
+  transition: 1s;
+}
+
+.reserve-store .medal .front {
+  position: absolute;
+  transform: rotateY(0deg);
+}
+
+.reserve-store .medal:hover .front {
+  transform: rotateY(180deg);
+}
+
+.reserve-store .medal .back {
+  transform: rotateY(-180deg);
+}
+.reserve-store .medal:hover .back {
+  transform: rotateY(0deg);
+}
 /* 매장찾기  */
 .find-store {
   background-image: url(../images/find_store_bg.jpg);
