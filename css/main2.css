@@ -126,16 +126,17 @@ img {
   transition-delay: 0.9s;
 }
 
-/* header  */
+/***************** header  *****************/
 header {
-  position: fixed;
+  /* position: fixed; */
+  position: sticky;
   /* position: relative; */
   top: 0;
   left: 0;
   width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
-  z-index: 15;
+  z-index: 3;
 }
 .inner {
   width: 1100px;
@@ -148,11 +149,11 @@ header > .inner {
 }
 
 header .logo {
-  /*   height: 75px;
+  height: 75px;
   position: absolute;
   top: 0;
   bottom: 0;
-  margin: auto; */
+  margin: auto;
 }
 
 header .sub-menu {
@@ -175,7 +176,6 @@ ul.cnb li {
 header .search {
   position: relative;
   height: 34px;
-  border: 1px solid #f00;
 }
 header .search input {
   width: 36px;
@@ -305,7 +305,7 @@ header .badges .badge {
 section.visual {
   background: url("../images/visual_bg.jpg");
   background-position: center;
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 
 .visual .inner {
@@ -933,6 +933,7 @@ footer img.logo {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  z-index: 3;
 }
 
 #gotop .material-icons {
