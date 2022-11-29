@@ -1,5 +1,24 @@
-/* 배지 보이기 숨기기 처리 */
+// 검색부분 
+const searchEl = document.querySelector('.search')
+const inputEl = searchEl.querySelector('input')
 
+searchEl.addEventListener('click', function () {
+  inputEl.focus();
+})
+
+inputEl.addEventListener('focus', function () {
+  searchEl.classList.add('focused')
+  inputEl.setAttribute('placeholder', '통합검색')
+})
+
+
+inputEl.addEventListener('blur', function () {
+  searchEl.classList.remove('focused')
+  inputEl.setAttribute('placeholder', '')
+})
+
+
+/* 배지 보이기 숨기기 처리 */
 const badgeEl = document.querySelector('header .badges')
 const goTop = document.querySelector('#gotop')
 

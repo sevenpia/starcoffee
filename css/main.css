@@ -186,6 +186,7 @@ header .sub-menu .search .material-icons {
   right: 5px;
   margin: auto;
   transition: 0.4s;
+  border: 1px solid #f00;
 }
 header .sub-menu .search.focused .material-icons {
   opacity: 0;

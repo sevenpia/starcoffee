@@ -148,23 +148,68 @@ header > .inner {
 }
 
 header .logo {
-  height: 75px;
+  /*   height: 75px;
   position: absolute;
   top: 0;
   bottom: 0;
-  margin: auto;
+  margin: auto; */
 }
 
-ul.cnb {
+header .sub-menu {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 0;
   display: flex;
+  font-size: 12px;
+}
+ul.cnb {
   font-size: 14px;
+  display: flex;
 }
 
 ul.cnb li {
   padding: 15px;
+}
+
+/* 검색창  */
+header .search {
+  position: relative;
+  height: 34px;
+  border: 1px solid #f00;
+}
+header .search input {
+  width: 36px;
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 4px 10px;
+  background-color: #fff;
+  color: #555;
+  font-size: 12px;
+  /*   justify-content: center;
+  align-items: center; */
+  transition: 0.4s;
+}
+
+header .search input:focus {
+  width: 190px;
+  border: 1px solid #690;
+}
+header .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+header .search.focused .material-icons {
+  opacity: 0;
 }
 
 /*  메인메뉴 */
