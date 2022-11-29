@@ -157,6 +157,7 @@ header .sub-menu ul.menu li a {
 header .sub-menu ul.menu li a:hover {
   color: #000;
 }
+
 header .sub-menu .search {
   position: relative;
   height: 34px;
@@ -186,11 +187,11 @@ header .sub-menu .search .material-icons {
   right: 5px;
   margin: auto;
   transition: 0.4s;
-  border: 1px solid #f00;
 }
 header .sub-menu .search.focused .material-icons {
   opacity: 0;
 }
+
 header .main-menu {
   position: absolute;
   bottom: 0;
@@ -273,6 +274,8 @@ header .badges .badge {
   margin-top: 120px;
   background-image: url("../images/visual_bg.jpg");
   background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
 }
 .visual .inner {
   height: 646px;

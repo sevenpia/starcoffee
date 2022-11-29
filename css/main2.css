@@ -472,14 +472,13 @@ section.visual {
   width: calc(819px * 3 + 20px);
   height: 553px;
   /* background-color: orange; */
-  position: absolute;
-  /*   top: 40px;
-  left: 50%;
+  /*   left: 50%;
   margin-left: calc((819px * 3 + 20px) / -2); */
 
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -54%);
 }
 
 .promotion .swiper-container .swiper-wrapper {

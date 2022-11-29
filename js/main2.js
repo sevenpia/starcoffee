@@ -192,19 +192,18 @@ new Swiper('.awards .swiper-container', {
 const prEl = document.querySelector('.promotion');
 const toggleBtn = document.querySelector('.upload_icon');
 
-let isHidePr = false;
+let isHidePr = true;
 
 toggleBtn.addEventListener('click', function () {
-  isHidePr = !isHidePr;
+  isHidePr = !isHidePr;  // false 처리해준다. 
   if (isHidePr) {
-    // 숨김처리
+    // 숨김처리 
     prEl.classList.add('hide');
   } else {
     // 보임처리
     prEl.classList.remove('hide');
   }
 })
-
 
 // 관리할 요소들 검색!
 // const spyEls = document.querySelectorAll('section.scroll-spy')
