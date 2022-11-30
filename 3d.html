@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3d</title>
-  <style>
+  <!--  <style>
     .container {
       position: absolute;
       left: 50%;
@@ -43,14 +43,59 @@
     .container:hover .back {
       transform: rotateY(0deg);
     }
-  </style>
+  </style> -->
 </head>
 
 <body>
+  <!--   <div class="container">
+    <div class="item front">앞</div>
+    <div class="item back">뒤</div>
+  </div> -->
+
   <div class="container">
     <div class="item front">앞</div>
     <div class="item back">뒤</div>
   </div>
+
+  <style>
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      perspective: 150px;
+      /* border: 10px solid #f00; */
+      width: 100px;
+      height: 100px;
+    }
+
+    .container .item {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #f00;
+      backface-visibility: hidden;
+      font-size: 60px;
+      background-color: orange;
+      transition: 1s;
+    }
+
+    .container .front {
+      position: absolute;
+      transform: rotateY(0deg)
+    }
+
+    .container:hover .front {
+      transform: rotateY(180deg)
+    }
+
+    .container .item.back {
+      transform: rotateY(-180deg)
+    }
+
+    .container:hover .back {
+      transform: rotateY(0deg)
+    }
+  </style>
 
 </body>
 

@@ -128,15 +128,15 @@ img {
 
 /***************** header  *****************/
 header {
-  /* position: fixed; */
-  position: sticky;
+  position: fixed;
+  /* position: sticky; */
   /* position: relative; */
   top: 0;
   left: 0;
   width: 100%;
   background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
-  z-index: 3;
+  z-index: 9;
 }
 .inner {
   width: 1100px;
@@ -305,7 +305,7 @@ header .badges .badge {
 section.visual {
   background: url("../images/visual_bg.jpg");
   background-position: center;
-  /* margin-top: 120px; */
+  margin-top: 120px;
 }
 
 .visual .inner {
@@ -449,6 +449,7 @@ section.visual {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 36px;
 }
 
 .notice-line .inner .inner__right .upload_icon .material-icons {
