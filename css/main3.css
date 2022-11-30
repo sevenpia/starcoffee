@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:link,
+a:visited {
+}
+a:hover {
+}
+a:active {
+}
+
+body {
+  font-family: "맑은 고딕", malgunGothic, arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  border: 5px solid #f00;
+}
+
+/********************** header ***********************/
+
+header {
+  width: 100%;
+  background-color: #aaa;
+  position: relative;
+}
+header > .inner {
+  height: 120px;
+}
+
+header .logo {
+  /* padding-top: 22px; */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 75px;
+  margin: auto 0;
+  border: 1px solid #f00;
+}
+
+header ul.cnb {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+header ul.cnb li {
+  padding: 10px 15px;
+}
+header ul.cnb li a {
+}
+header ul.cnb li:hover a {
+  color: #690;
+}
+
+header ul.cnb li:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+header input {
+  width: 46px;
+  height: 34px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.4s;
+}
+header input:focus {
+  width: 190px;
+  border: 2px solid #690;
+  box-sizing: border-box;
+}
+.material-icons {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  height: 24px;
+  margin: auto;
+  right: 6px;
+}
+/********************** 비쥬얼 visual ***********************/
+
+section.visual {
+  height: 646px;
+  background-color: #bbb;
+}
+
+section.notice {
+  height: 62px;
+  background-color: #ccc;
+}
+
+section.rewards {
+  height: 241px;
+  background-color: #ddd;
+}
+section.youtube {
+  height: 700px;
+  background-color: #eee;
+}
+section.season-product {
+  height: 400px;
+  background-color: #a9a9a9;
+}
+section.reserve-coffee {
+  height: 400px;
+  background-color: #b6b6b6;
+}
+section.favorite {
+  height: 700px;
+  background-color: #d2d3d3;
+}
+section.reserve-store {
+  height: 600px;
+  background-color: #cde;
+}
+section.find-store {
+  height: 400px;
+  background-color: #cde;
+}
+section.awards {
+  height: 120px;
+  background-color: #addae1;
+}
+
+footer {
+  width: 100%;
+  height: 350px;
+  background-color: #999;
+}
