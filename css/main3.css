@@ -38,7 +38,7 @@ body {
 
 header {
   width: 100%;
-  background-color: #aaa;
+  background-color: rgb(245, 245, 245);
   position: relative;
 }
 header > .inner {
@@ -52,7 +52,6 @@ header .logo {
   bottom: 0;
   height: 75px;
   margin: auto 0;
-  border: 1px solid #f00;
 }
 
 header ul.cnb {
@@ -82,7 +81,7 @@ header ul.cnb li:last-child {
 }
 
 header input {
-  width: 46px;
+  width: 36px;
   height: 34px;
   border-radius: 5px;
   padding: 3px 5px;
@@ -95,7 +94,7 @@ header input:focus {
   border: 2px solid #690;
   box-sizing: border-box;
 }
-.material-icons {
+header .material-icons {
   position: absolute;
   right: 0;
   z-index: 1;
@@ -105,6 +104,49 @@ header input:focus {
   margin: auto;
   right: 6px;
 }
+
+header .menu-all {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border: 10px solid #f00;
+  background-color: #ff0;
+}
+
+header .menu-all > ul.gnb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  border: 10px solid #ff0;
+}
+
+header .menu-all ul.gnb > li {
+  padding: 15px 20px 30px 20px;
+  border-radius: 5px 5px 0 0;
+}
+header .menu-all ul.gnb > li:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+header .menu-all ul.gnb > li a {
+}
+header .menu-all ul.gnb > li:hover a {
+}
+
+header .menu-all > ul.gnb ul.sub-menu {
+  width: 100%;
+  display: flex;
+}
+header .menu-all ul.gnb ul.sub-menu ul {
+  display: none;
+  width: 100%;
+}
+
+header .menu-all .gnb-texture {
+}
+
 /********************** 비쥬얼 visual ***********************/
 
 section.visual {
