@@ -106,6 +106,8 @@ header .material-icons {
   right: 6px;
 }
 
+/********************** header ul.menu-all ***********************/
+
 header ul.menu-all {
   position: absolute;
   bottom: 0px;
@@ -160,11 +162,14 @@ header .contents__menu ul.inner li ul {
   margin: 30px 0;
 }
 header .contents__menu ul.inner li ul li {
-  color: #eee;
+  color: #999;
   font-size: 0.8em;
   line-height: 2em;
 }
 
+header .contents__menu ul.inner li ul li:hover {
+  color: #690;
+}
 /********************** 비쥬얼 visual ***********************/
 
 section.visual {
