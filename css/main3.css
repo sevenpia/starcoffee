@@ -31,7 +31,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  border: 5px solid #f00;
+  /* border: 5px solid #f00; */
 }
 
 /********************** header ***********************/
@@ -40,6 +40,7 @@ header {
   width: 100%;
   background-color: rgb(245, 245, 245);
   position: relative;
+  z-index: 3;
 }
 header > .inner {
   height: 120px;
@@ -105,46 +106,63 @@ header .material-icons {
   right: 6px;
 }
 
-header .menu-all {
+header ul.menu-all {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  border: 10px solid #f00;
-  background-color: #ff0;
-}
-
-header .menu-all > ul.gnb {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
-  border: 10px solid #ff0;
 }
 
-header .menu-all ul.gnb > li {
-  padding: 15px 20px 30px 20px;
-  border-radius: 5px 5px 0 0;
+header ul.menu-all li.item {
 }
-header .menu-all ul.gnb > li:hover {
+header ul.menu-all li.item .item__contents {
+  width: 100%;
   background-color: #333;
-  color: #fff;
+  display: none;
 }
 
-header .menu-all ul.gnb > li a {
-}
-header .menu-all ul.gnb > li:hover a {
+header ul.menu-all li.item:hover .item__contents {
+  display: block;
 }
 
-header .menu-all > ul.gnb ul.sub-menu {
+header ul.menu-all li.item:hover .item__name {
+  background-color: #333;
+  color: #669900;
+}
+
+header ul.menu-all li.item .item__name {
+  padding: 10px 30px 20px 30px;
+  border-radius: 10px 10px 0 0;
+}
+
+header .item__contents {
   width: 100%;
+  position: fixed;
+  left: 0;
+}
+
+header .contents__menu {
+}
+header .contents__menu ul.inner {
+  padding: 20px 0;
   display: flex;
 }
-header .menu-all ul.gnb ul.sub-menu ul {
-  display: none;
-  width: 100%;
+
+header .contents__menu ul.inner h4 {
+  padding-top: 15px;
+  color: #efefef;
+}
+header .contents__menu ul.inner li {
+  width: 230px;
 }
 
-header .menu-all .gnb-texture {
+header .contents__menu ul.inner li ul {
+  margin: 30px 0;
+}
+header .contents__menu ul.inner li ul li {
+  color: #eee;
+  font-size: 0.8em;
+  line-height: 2em;
 }
 
 /********************** 비쥬얼 visual ***********************/
