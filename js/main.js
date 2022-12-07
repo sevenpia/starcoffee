@@ -43,7 +43,7 @@ window.addEventListener('scroll', _.throttle(function () {
       x: 0
     })
 
-  // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    // 페이지 스크롤 위치가 500px이 넘지 않으면.
   } else {
     // Badge 요소 보이기!
     gsap.to(badgeEl, .6, {
@@ -136,7 +136,7 @@ promotionToggleBtn.addEventListener('click', function () {
   // 요소를 숨겨야 하면,
   if (isHidePromotion) {
     promotionEl.classList.add('hide')
-  // 요소가 보여야 하면,
+    // 요소가 보여야 하면,
   } else {
     promotionEl.classList.remove('hide')
   }

@@ -68,7 +68,6 @@ fadeEls.forEach(function (fadeEl, index) {
   })
 }) */
 
-
 // awards swiper
 new Swiper('.awards .swiper', {
   autoplay: {
@@ -82,3 +81,26 @@ new Swiper('.awards .swiper', {
     nextEl: '.awards .swiper-next'
   }
 })
+
+
+spyEls = document.querySelectorAll('section.scroll-spy')
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic.Scene({
+    triggerElement: spyEl,
+    triggerHook: 0.8
+  })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller())
+})
+
+
+
+/* const aniScenes = document.querySelectorAll('section.anime-scene')
+aniScenes.forEach(function (aniScene) {
+  new ScrollMagic.Scene({
+    triggerElement: aniScene,
+    triggerHook: 0.8
+  })
+    .setClassToggle(aniScene, 'show')
+    .addTo(new ScrollMagic.Controller())
+}) */

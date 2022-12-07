@@ -662,6 +662,7 @@ section.rewards .btn.gift {
   position: absolute;
   top: 110px;
   right: 100px;
+  border: 1px solid #f00;
 }
 .season-product .txt_group .title {
   margin-bottom: 10px;

@@ -18,6 +18,9 @@
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
     crossorigin="anonymous"></script>
 
+  <!--   scrollMagic 연결 -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
   <script src="js/script3.js" defer></script>
 </head>
 
@@ -41,7 +44,7 @@
         ul.main-menu  (메뉴 시작)     
           li.item : 대메뉴 및 서브메뉴 전체를 아우르는 영역  : 총 6개의 대메뉴
                 .item__name (대메뉴)
-                .item__contents (서브메뉴들  : 100% 영역) (.contents__menu+ .contents__texture)
+                .item__contents (서브메뉴들  : 100% 영역) (.contents__menu  .contents__texture)
                     .contents__menu(서브메뉴의  ul  시작 부분 : ul.inner  li 부분)
                             ul.inner>li  ul li ...
                     .contents__texture
@@ -232,20 +235,46 @@
     <div class="inner">youtube
     </div>
   </section>
-  <section class="season-product">
-    <div class="inner">season product</div>
+  <!--   <section class="season-product anime-scene">
+    <div class="inner">
+      <img src="./images/season_product_image.png" alt="시즌상품1" class="origin-pos to-right delay-0">
+      <div class="txt_group">
+        <img src="./images/season_product_text1.png" alt="시즌상품 설명1" class="title origin-pos to-left delay-1">
+        <img src="./images/season_product_text2.png" alt="시즌상품 설명2" class="desc origin-pos  to-left delay-2">
+      </div>
+    </div>
+  </section> -->
+  <!-- season-product -->
+
+  <section class="season-product scroll-spy">
+    <!-- coffee 높이 400 -->
+    <div class="inner">
+      <img src="./images/season_product_image.png" alt="계절상품" class="back-to-position to-right delay-0">
+
+      <div class="txt_group">
+        <img src="./images/season_product_text1.png" alt="아이스 커피블랜드" class="title back-to-position to-left delay-1">
+        <img src="./images/season_product_text2.png" alt="아이스 커피블랜드 설명" class="desc back-to-position to-left delay-2">
+        <div class="more back-to-position to-left delay-3">
+          <a href="javascript:void(0)" class="btn ">자세히보기</a>
+        </div>
+      </div>
+    </div>
   </section>
+
+
+
+
   <section class="reserve-coffee">
-    <div class="inner">reserve coffee</div>
+    <div class="inner">reserve coffee 높이 400</div>
   </section>
   <section class="favorite">
-    <div class="inner">favorite</div>
+    <div class="inner">favorite 높이700</div>
   </section>
   <section class="reserve-store">
-    <div class="inner">reserve store</div>
+    <div class="inner">reserve store 높이 600</div>
   </section>
   <section class="find-store">
-    <div class="inner">find store</div>
+    <div class="inner">find store 높이 400</div>
   </section>
   <section class="awards">
     <div class="inner">
