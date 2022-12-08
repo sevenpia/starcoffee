@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- material icon  연결 -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/notice.css">
+
+  <!-- swiper 연결 -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css" />
+
+  <script src="./js/notice.js" defer></script>
+  <title>notice</title>
+</head>
+
+<body>
+  <!-- 공지사항 구조     
+    .notice 
+          .notice-line 
+                .bg-left
+                .bg-right
+                .inner
+                    .inner-left 
+                    .inner-right 
+          .promotion
+-->
+
+  <header>로고</header>
+  <div class="visual">비주얼영역</div>
+  <div class="notice">
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="inner-left">
+          <h2>공지사항</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">크리스마스 &amp; 연말연시 스타벅스 매장 영업시간 변경 안내</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a></div>
+              <div class="swiper-slide"><a href="javascript:void(0)">크리스마스 &amp; 연말연시 스타벅스 매장 영업시간 변경 안내</a></div>
+            </div><!-- swiper-wrapper -->
+          </div> <!-- swiper -->
+          <a href="javascript:void(0)" class="icon1">
+            <span class="material-icons">
+              add_circle_outline
+            </span>
+          </a>
+        </div> <!-- inner-left -->
+        <div class="inner-right">
+          <h2>스타벅스 이벤트 </h2>
+          <a href="javascript:void(0)" class="icon2">
+            <span class="material-icons">
+              file_upload
+            </span>
+          </a>
+        </div> <!-- inner-right -->
+      </div> <!-- inner -->
+    </div><!-- notice-line -->
+    <div class="promotion"></div><!-- promotion -->
+  </div> <!-- notice -->
+</body>
+
+</html>

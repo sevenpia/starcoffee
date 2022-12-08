@@ -110,7 +110,7 @@ section.visual {
 }
 
 section.visual .inner {
-  height: 600px;
+  height: 646px;
 }
 
 .fade-in {
@@ -128,7 +128,7 @@ section.visual .inner .img-group .btn {
 }
 section.visual .inner .cup1 {
   position: absolute;
-  top: 20px;
+  top: 50px;
   right: 50px;
 }
 section.visual .inner .cup1.txt {
@@ -139,12 +139,12 @@ section.visual .inner .cup1.txt {
 
 section.visual .inner .cup2 {
   position: absolute;
-  top: 100px;
+  top: 130px;
   right: 250px;
 }
 section.visual .inner .cup2.txt {
   position: absolute;
-  top: 220px;
+  top: 260px;
   right: 500px;
 }
 section.visual .inner .spoon {
@@ -154,62 +154,128 @@ section.visual .inner .spoon {
 }
 
 /************************** notice  ************************/
+
+/*  공지사항 구조     
+.notice 
+      .notice-line 
+            .bg-left
+            .bg-right
+            .inner
+                .inner-left 
+                .inner-right 
+      .promotion 
+*/
+
 section.notice {
+  position: relative;
 }
 
-section.notice .inner {
-}
-
+/* 공지사항 라인 */
 section.notice .notice-line {
+  position: relative;
+}
+section.notice .notice-line .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section.notice .notice-line .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #f5f5f5;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section.notice .notice-line .inner {
+  height: 62px;
+  z-index: 1;
   display: flex;
-  background: #333;
-  justify-content: center;
+}
+section.notice .notice-line .inner .inner-left {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
   align-items: center;
 }
 
-section.notice .notice-line h2 {
+section.notice .notice-line .inner .inner-left h2 {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
   margin-right: 20px;
 }
-section.notice .notice-line .swiper {
+section.notice .notice-line .inner .inner-left .swiper {
   height: 62px;
   flex-grow: 1;
 }
-section.notice .notice-line .swiper-wrapper {
+
+section.notice .notice-line .inner .swiper .swiper-wrapper {
 }
-section.notice .notice-line .swiper-wrapper .swiper-slide {
+section.notice .notice-line .inner .swiper-slide {
   height: 62px;
   display: flex;
   align-items: center;
 }
 
-section.notice .notice-line .swiper-wrapper .swiper-slide a {
+section.notice .notice-line .inner .swiper-slide a {
   color: #fff;
 }
 
-section.notice .notice-line .notice-line__more {
+.notice .notice-line .notice-line__more {
   width: 62px;
   height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid #f00; */
 }
-
-section.notice .notice-line .notice-line__more .material-icons {
+.notice .notice-line .notice-line__more .material-icons {
   color: #fff;
   font-size: 30px;
 }
 
+section.notice .notice-line .inner .inner-right {
+  width: 40%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section.notice .notice-line .inner .inner-right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+section.notice .notice-line .inner .inner-right .upload-bt {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.notice .notice-line .inner .inner-right .upload-bt .material-icons {
+  color: #333;
+  font-size: 30px;
+}
+
+/* 프로모션 창이 열린다.  */
+section.notice .promotion {
+  position: relative;
+}
+
 /************************** promotion  ************************/
 .promotion {
-  border-bottom: 10px solid #999;
+  border-bottom: 2px solid #999;
 }
 
 .promotion .inner {
-  height: 700px;
+  height: 690px;
 }
 
 /************************** youtube  ************************/
@@ -278,6 +344,10 @@ section.reserve-coffee,
   position: absolute;
   top: 124px;
   left: 215px;
+}
+
+.reserve-coffee .txt-group .desc {
+  margin-bottom: 20px;
 }
 
 .reserve-coffee .product {

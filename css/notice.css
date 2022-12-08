@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "맑은 고딕", malgunGothic, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: relative;
+  height: 120px;
+  border: 1px solid #f00;
+}
+.visual {
+  position: relative;
+  height: 300px;
+  border: 1px solid #f00;
+}
+/* 
+공지사항 구조     
+.notice 
+      .notice-line 
+            .bg-left
+            .bg-right
+            .inner
+                .inner-left 
+                .inner-right 
+      .promotion */
+
+.inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.notice {
+  position: relative;
+}
+.notice .notice-line {
+  position: relative;
+}
+.notice .notice-line .bg-left {
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.notice .notice-line .bg-right {
+  width: 50%;
+  height: 100%;
+  background-color: #ff0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.notice .notice-line .inner {
+  height: 62px;
+  display: flex;
+  z-index: 1;
+}
+.notice .notice-line .inner .inner-left {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.notice .notice-line .inner .inner-left h2 {
+  font-size: 17px;
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.notice .notice-line .inner .inner-left .swiper {
+  height: 62px;
+  flex-grow: 1;
+  color: #fff;
+}
+.notice .notice-line .swiper .swiper-wrapper {
+}
+.notice .notice-line .swiper .swiper-wrapper .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.notice .notice-line .icon1 {
+  width: 62px;
+  height: 62px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.notice .notice-line .icon1 .material-icons {
+  font-size: 36px;
+}
+
+.notice .notice-line .inner .inner-right {
+  width: 40%;
+  height: 100%;
+  background-color: #ff0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.notice .notice-line .inner .inner-right h2 {
+  font-size: 17px;
+}
+.notice .notice-line .icon2 {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notice .notice-line .icon2 .material-icons {
+  font-size: 30px;
+}
+
+/* 프로모션 */
+.notice .promotion {
+}
