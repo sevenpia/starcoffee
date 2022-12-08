@@ -19,6 +19,7 @@ body {
   min-width: 1900px;
 }
 .inner {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   border: 1px solid #f00;
@@ -40,8 +41,7 @@ body {
 
 .btn {
   width: 120px;
-  padding: 15px;
-  background-color: coral;
+  padding: 13px;
   text-align: center;
   color: #fff;
   font-size: 16px;
@@ -49,20 +49,22 @@ body {
   border-radius: 5px;
 }
 
-.btn a,
-.btn a:link,
-.btn a:visited {
+.btn--brown {
+  background-color: brown;
+}
+.btn--brown:hover {
+  border: 1px solid #333;
+  background-color: transparent;
+  color: #333;
+}
+.btn--orange {
+  background-color: coral;
+}
+.btn--orange:hover {
+  border: 1px solid #d13e19;
+  background: #d13e19;
   color: #fff;
 }
-
-.btn a:hover {
-  color: #00f;
-}
-
-.btn:hover {
-  background: cadetblue;
-}
-
 .show .to-right {
   opacity: 1;
   transform: translateX(0);
@@ -95,17 +97,63 @@ header {
 }
 
 header .inner {
+  position: relative;
   height: 120px;
 }
 
+/************************** visual  ************************/
 section.visual {
   border-bottom: 1px solid #999;
+  background: url(../images/visual_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 section.visual .inner {
   height: 600px;
 }
 
+.fade-in {
+  opacity: 0;
+}
+section.visual .inner .img-group {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+section.visual .inner .img-group .btn {
+  position: absolute;
+  top: 259px;
+  left: 173px;
+}
+section.visual .inner .cup1 {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+section.visual .inner .cup1.txt {
+  position: absolute;
+  top: 30px;
+  right: 280px;
+}
+
+section.visual .inner .cup2 {
+  position: absolute;
+  top: 100px;
+  right: 250px;
+}
+section.visual .inner .cup2.txt {
+  position: absolute;
+  top: 220px;
+  right: 500px;
+}
+section.visual .inner .spoon {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+
+/************************** promotion  ************************/
 section.promotion {
   border-bottom: 1px solid #999;
 }

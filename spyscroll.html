@@ -10,8 +10,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <link rel="stylesheet" href="css/spy.css">
+  <!-- scrollMagic -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!-- swiper -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+  <!-- gsap 애니메이션 움직임 만들기-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 
   <script src="./js/spy.js" defer></script>
   <title>spyscroll</title>
@@ -24,7 +28,22 @@
     </div>
   </header>
   <section class="visual">
-    <div class="inner">visual</div>
+    <div class="inner">
+      <div class="img-group fade-in">
+        <img src="./images/visual_title.png" alt="이미지1">
+        <a href="javascript:void(0)" class="btn btn--brown">자세히보기</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup1.png" alt="컵1" class="cup1 images">
+        <img src="./images/visual_cup1_text.png" alt="컵1 설명" class="cup1 txt">
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_cup2.png" alt="컵2" class="cup2 images">
+        <img src="./images/visual_cup2_text.png" alt="컵2 설명" class="cup2 txt">
+      </div>
+      <div class="fade-in">
+        <img src="./images/visual_spoon.png" alt="스푼" class="spoon">
+      </div>
   </section>
   <section class="promotion">
     <div class="inner">
@@ -42,7 +61,7 @@
         <img src="./images/season_product_text1.png" alt="상품제목" class="title oripos to-left delay-1">
         <img src="./images/season_product_text2.png" alt="상품설명" class="desc oripos to-left delay-2">
         <div class="oripos to-left delay-3">
-          <a href="javascript:void(0)" class="btn">자세히보기</a>
+          <a href="javascript:void(0)" class="btn btn--orange">자세히보기</a>
         </div>
       </div>
     </div>
@@ -55,7 +74,7 @@
       <div class="txt-group">
         <img src="./images/reserve_text.png" alt="제목과 설명" class="desc oripos to-left delay-1">
         <div class="oripos to-left delay-2">
-          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          <a href="javascript:void(0)" class="btn btn--orange">자세히 보기</a>
         </div>
       </div> <!-- txt-group -->
       <img src="./images/reserve_image.png" alt="제목과 설명" class="product oripos  to-left delay-3">
@@ -68,7 +87,7 @@
         <img src="./images/favorite_text1.png" alt="pick your favorite" class="title oripos to-right dely-0">
         <img src="./images/favorite_text2.png" alt="다양한 메뉴" class="desc oripos to-right delay-1">
         <div class="oripos to-right delay-2">
-          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          <a href="javascript:void(0)" class="btn btn--orange">자세히 보기</a>
         </div>
       </div>
     </div>
@@ -88,7 +107,7 @@
         <img src="./images/find_store_text1.png" alt="" class="title oripos to-left delay-1">
         <img src="./images/find_store_text2.png" alt="" class="desc oripos to-left delay-2">
         <div class="oripos to-left delay-3">
-          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          <a href="javascript:void(0)" class="btn btn--orange">자세히 보기</a>
         </div>
       </div>
 
