@@ -47,6 +47,7 @@ body {
   font-size: 16px;
   box-sizing: border-box;
   border-radius: 5px;
+  display: block;
 }
 
 .btn--brown {
@@ -446,6 +447,7 @@ section.reserve-coffee,
 /****************************** awards  ****************************/
 .awards {
   background-color: #333;
+  border-bottom: 1px solid #eee;
 }
 
 .awards .inner {
