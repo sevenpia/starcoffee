@@ -59,8 +59,16 @@ spyEls.forEach(function (spyEl) {
 })
  */
 
+// swiper(요소, { 옵션 })
+new Swiper(".notice-line .swiper", {
+  direction: "vertical",
+  autoplay: true,
+  loop: true,
+})
 
-new Swiper(".swiper", {
+
+
+new Swiper(".awards .swiper", {
   autoplay: {
     delay: 1500,
   },

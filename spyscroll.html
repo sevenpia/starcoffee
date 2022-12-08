@@ -6,14 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- 구글 아이콘 연결 -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <link rel="stylesheet" href="css/spy.css">
   <!-- scrollMagic -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-  <!-- swiper -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+
   <!-- gsap 애니메이션 움직임 만들기-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 
@@ -45,14 +48,40 @@
         <img src="./images/visual_spoon.png" alt="스푼" class="spoon">
       </div>
   </section>
-  <section class="promotion">
+
+  <section class="notice">
     <div class="inner">
-      promotion</div>
+      <div class="notice-line">
+        <h2>공지사항</h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"> <a href="javascript:void(0)">크리스마스 & 연말연시 스타벅스 매장 영업시간 변경 안내</a> </div>
+            <div class="swiper-slide"> <a href="javascript:void(0)">[당첨자 발표] 2021 스타벅스 플래너 영수증 이벤트</a> </div>
+            <div class="swiper-slide"> <a href="javascript:void(0)">스타벅스커피 코리아 애플리케이션 버전 업데이트 안내</a> </div>
+            <div class="swiper-slide"> <a href="javascript:void(0)">[당첨자 발표] 뉴이어 전자영수증 이벤트</a> </div>
+            <div class="swiper-slide"> <a href="javascript:void(0)">크리스마스 &amp; 연말연시 스타벅스 매장 영업시간 변경 안내</a> </div>
+          </div> <!-- swiper-wrapper -->
+        </div> <!-- swiper -->
+        <a href="javascript:void(0)" class="notice-line__more">
+          <span class="material-icons">
+            add_circle_outline
+          </span>
+        </a>
+
+
+
+      </div> <!-- notice-line -->
+
+    </div> <!-- inner -->
+    <!--     <div class="promotion">
+      <div class="inner">
+        promotion</div>
+    </div> -->
   </section>
   <section class="youtube">
     <div class="inner">youtube</div>
   </section>
-
   <!----------------------- 시즌상품 ------------------------ -->
   <section class="season-product scroll-spy">
     <div class="inner">

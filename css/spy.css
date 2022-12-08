@@ -9,7 +9,7 @@ img {
 
 a {
   text-decoration: none;
-  display: block;
+  /* display: block; */
 }
 
 body {
@@ -153,15 +153,66 @@ section.visual .inner .spoon {
   left: 300px;
 }
 
-/************************** promotion  ************************/
-section.promotion {
-  border-bottom: 1px solid #999;
+/************************** notice  ************************/
+section.notice {
 }
 
-section.promotion .inner {
+section.notice .inner {
+}
+
+section.notice .notice-line {
+  display: flex;
+  background: #333;
+  justify-content: center;
+  align-items: center;
+}
+
+section.notice .notice-line h2 {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+section.notice .notice-line .swiper {
+  height: 62px;
+  flex-grow: 1;
+}
+section.notice .notice-line .swiper-wrapper {
+}
+section.notice .notice-line .swiper-wrapper .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+section.notice .notice-line .swiper-wrapper .swiper-slide a {
+  color: #fff;
+}
+
+section.notice .notice-line .notice-line__more {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid #f00; */
+}
+
+section.notice .notice-line .notice-line__more .material-icons {
+  color: #fff;
+  font-size: 30px;
+}
+
+/************************** promotion  ************************/
+.promotion {
+  border-bottom: 10px solid #999;
+}
+
+.promotion .inner {
   height: 700px;
 }
 
+/************************** youtube  ************************/
 section.youtube {
   border-bottom: 1px solid #999;
 }
