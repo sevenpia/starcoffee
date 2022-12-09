@@ -13,6 +13,24 @@ fadeIns.forEach(function (fadeIn, index) {
   })
 })
 
+// 프로모션
+const promotionEl = document.querySelector('.promotion')
+const uploadBt = document.querySelector('.upload-bt')
+console.log(promotionEl)
+
+let isHide = true;
+uploadBt.addEventListener('click', function () {
+  isHide = !isHide  // false
+
+  if (isHide) {
+    // hide 추가
+    promotionEl.classList.add('hide')
+  }
+  else {
+    // hide 삭제
+    promotionEl.classList.remove('hide')
+  }
+})
 
 /* 
 const spyEls = document.querySelectorAll('section.spy-scroll')
@@ -67,6 +85,22 @@ new Swiper(".notice-line .swiper", {
 })
 
 
+new Swiper(".promotion .swiper", {
+  // autoplay: true,
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true, // 1번 슬라이드가 가운데 보이기
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+})
 
 new Swiper(".awards .swiper", {
   autoplay: {
@@ -90,3 +124,6 @@ new Swiper(".awards .swiper", {
   },
 });
  */
+
+
+

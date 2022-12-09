@@ -40,23 +40,52 @@ body {
 }
 
 .btn {
-  width: 120px;
-  padding: 13px;
+  width: 130px;
+  padding: 10px;
   text-align: center;
-  color: #fff;
+  color: #333;
+  font-weight: 700;
   font-size: 16px;
   box-sizing: border-box;
   border-radius: 5px;
   display: block;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn--reverse {
+  background-color: #333;
+  border: 2px solid #333;
+  color: #fff;
+}
+
+.btn--reverse:hover {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #333;
+}
+
+.btn--black {
+  background-color: transparent;
+  border: 2px solid #333;
+  color: #333;
+}
+
+.btn--black:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 .btn--brown {
   background-color: brown;
+  border-color: brown;
+  color: #fff;
 }
 .btn--brown:hover {
-  border: 1px solid #333;
+  border-color: brown;
   background-color: transparent;
-  color: #333;
+  color: brown;
 }
 .btn--orange {
   background-color: coral;
@@ -66,6 +95,25 @@ body {
   background: #d13e19;
   color: #fff;
 }
+
+.btn--gold {
+  color: #d9aa8a;
+  border-color: #d9aa8a;
+}
+.btn--gold:hover {
+  color: #fff;
+  background-color: #d9aa8a;
+}
+
+.btn--white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn--white:hover {
+  color: #333;
+  background-color: #fff;
+}
+
 .show .to-right {
   opacity: 1;
   transform: translateX(0);
@@ -94,7 +142,12 @@ body {
 
 /* header  */
 header {
+  width: 100%;
   border-bottom: 1px solid #999;
+  position: fixed;
+  overflow: hidden;
+  background: #fff;
+  z-index: 3;
 }
 
 header .inner {
@@ -104,6 +157,8 @@ header .inner {
 
 /************************** visual  ************************/
 section.visual {
+  padding-top: 120px;
+  position: relative;
   border-bottom: 1px solid #999;
   background: url(../images/visual_bg.jpg);
   background-size: cover;
@@ -273,10 +328,149 @@ section.notice .promotion {
 /************************** promotion  ************************/
 .promotion {
   border-bottom: 2px solid #999;
+  height: 690px;
+  background-color: #f6f5ef;
+  overflow: hidden;
+  transition: height 0.4s;
+  position: relative;
 }
 
-.promotion .inner {
-  height: 690px;
+.promotion.hide {
+  height: 0;
+}
+
+.promotion .swiper {
+  /* width: 2477px; */
+  width: calc(819px * 3 + 20px);
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.promotion .swiper .swiper-wrapper {
+}
+.promotion .swiper .swiper-wrapper .swiper-slide {
+  position: relative;
+  width: 100%;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+.promotion .swiper .swiper-wrapper .swiper-slide-active {
+  opacity: 1;
+}
+.promotion .swiper .swiper-wrapper .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.promotion .swiper-pagination {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet {
+  width: 13px;
+  height: 12px;
+  background: url(../images/promotion_slide_pager.png);
+  margin-right: 6px;
+  outline: none;
+}
+
+.promotion .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet-active {
+  background: url(../images/promotion_slide_pager_on.png);
+}
+
+.promotion .swiper-button-prev,
+.promotion .swiper-button-next {
+  background-color: transparent;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  top: 48%;
+  border: 3px solid #333;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.promotion .swiper-button-prev {
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+}
+
+.promotion .swiper-button-next {
+  position: absolute;
+  right: 50%;
+  margin-right: -480px;
+}
+
+.promotion .swiper-button-prev:hover,
+.promotion .swiper-button-next:hover {
+  background-color: #333;
+  color: #fff;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  /* font-size: 20px; */
+  display: none;
+}
+/************************** rewards  ************************/
+
+section.rewards {
+  position: relative;
+  width: 100%;
+}
+section.rewards .rewards__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #272727;
+}
+section.rewards .rewards__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #d5c798;
+}
+
+section.rewards .inner {
+  height: 241px;
+  background-image: url(../images/rewards.jpg);
+  background-repeat: no-repeat;
+}
+
+section.rewards .inner .btn-group {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  flex-wrap: wrap;
+}
+section.rewards .inner .btn-group .sign-up {
+  margin-right: 10px;
+}
+
+section.rewards .inner .btn-group .sing-in {
+  width: 110px;
+}
+section.rewards .inner .btn-group .e-gift {
+  margin-top: 10px;
+  flex: 1;
 }
 
 /************************** youtube  ************************/
@@ -462,20 +656,21 @@ section.reserve-coffee,
 .awards .swiper .swiper-wrapper .swiper-slide {
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.awards .swiper-button-prev::after,
+.awards .swiper-button-next::after {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   margin: auto;
   outline: none;
   border: 2px solid #fff;
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 700;
   border-radius: 50%;
   color: #fff;
-  opacity: 0.3;
+  opacity: 0.6;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -483,16 +678,18 @@ section.reserve-coffee,
   transition: 0.4s;
 }
 
-.swiper-button-prev::after {
+.awards .swiper-button-prev::after {
   left: -80px;
 }
-.swiper-button-next::after {
+.awards .swiper-button-next::after {
   right: -80px;
 }
 
-.swiper-button-prev:hover::after,
-.swiper-button-next:hover::after {
-  background: rgba(255, 255, 255, 0.6);
+.awards .swiper-button-prev:hover::after,
+.awards .swiper-button-next:hover::after {
+  background: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  color: #690;
 }
 
 /* .swiper-button-prev:after {
