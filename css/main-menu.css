@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "맑은 고딕", MalgunGothic, Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 16px;
+}
+
+.inner {
+  width: 1200px;
+  border: 1px solid #f00;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+
+header > .inner {
+  height: 120px;
+}
+header .logo {
+  position: absolute;
+  height: 75px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header ul.sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+
+header ul.sub-menu li {
+  margin-right: 30px;
+}
+
+header ul.main-menu {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  display: flex;
+}
+header ul.main-menu li.item {
+}
+header ul.main-menu li.item .item__name {
+  padding: 10px 25px 30px 25px;
+}
+
+header ul.main-menu li.item:hover .item__name {
+  background-color: #333;
+  color: #690;
+  border-radius: 5px 5px 0 0;
+}
+
+header ul.main-menu li.item .item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+
+header ul.main-menu li.item:hover .item__contents {
+  display: block;
+}
+header ul.main-menu li.item .item__contents .contents__menu {
+  background-color: #2c2a29;
+  /* height: 200px; */
+}
+
+header ul.main-menu li.item .item__contents .contents__menu > ul.inner {
+  padding: 20px 0 30px 0;
+  display: flex;
+}
+header ul.main-menu li.item .item__contents .contents__menu > ul.inner > li {
+  width: 250px;
+}
+header ul.main-menu li.item .item__contents .contents__menu > ul.inner > li h4 {
+  padding: 3px 0 12px;
+  font-size: 14px;
+  color: #fff;
+}
+
+header
+  ul.main-menu
+  li.item
+  .item__contents
+  .contents__menu
+  > ul.inner
+  > li
+  ul
+  li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+
+header ul.main-menu li.item .item__contents .contents__texture {
+  background: url(../images/main_menu_pattern.jpg);
+  font-size: 12px;
+}
+header ul.main-menu li.item .item__contents .contents__texture .inner {
+  padding: 20px;
+  box-sizing: border-box;
+}
+header ul.main-menu li.item .item__contents .contents__texture .inner h4 {
+  font-weight: bold;
+  color: #999;
+}
+header ul.main-menu li.item .item__contents .contents__texture .inner p {
+  color: #690;
+  margin: 4px 0 14px;
+}
