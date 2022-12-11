@@ -28,7 +28,7 @@ body {
   position: relative;
   width: 1200px;
   margin: 0 auto;
-  /* border: 1px solid #f00; */
+  border: 1px solid #f00;
 }
 
 /* common */
@@ -155,7 +155,7 @@ header {
   z-index: 3;
 }
 
-header .inner {
+header > .inner {
   position: relative;
   height: 120px;
 }
@@ -278,14 +278,53 @@ header ul.main-menu li.item:hover .item__contents {
   display: block;
 }
 header ul.main-menu li.item .item__contents .contents__menu {
-  background-color: #f00;
-  height: 200px;
-}
-header ul.main-menu li.item .item__contents .contents__texture {
-  background-color: orange;
-  height: 100px;
+  background: #2e2e2e;
+  font-size: 13px;
 }
 
+header ul.main-menu li.item .item__contents .contents__menu > .inner {
+  padding: 20px 0;
+  display: flex;
+}
+header ul.main-menu li.item .item__contents .contents__menu > .inner > li {
+  width: 220px;
+  font-size: 12px;
+}
+header ul.main-menu li.item .item__contents .contents__menu > .inner > li > h4 {
+  color: #eee;
+  padding: 3px 0 12px 0;
+}
+header ul.main-menu li.item .item__contents .contents__menu .inner > li > ul {
+}
+header
+  ul.main-menu
+  li.item
+  .item__contents
+  .contents__menu
+  .inner
+  > li
+  > ul
+  > li {
+  color: #999;
+  padding: 5px 0;
+}
+
+header ul.main-menu li.item .item__contents .contents__texture {
+  background: url(../images/main_menu_pattern.jpg);
+  font-size: 12px;
+}
+header ul.main-menu li.item .item__contents .contents__texture .inner {
+  padding: 20px;
+  box-sizing: border-box;
+}
+header ul.main-menu li.item .item__contents .contents__texture .inner h4 {
+  padding: 5px 0;
+  color: #eee;
+}
+header ul.main-menu li.item .item__contents .contents__texture .inner p {
+  margin: 4px 0 14px;
+  color: #999;
+}
 /************************** visual  ************************/
 section.visual {
   padding-top: 120px;

@@ -145,7 +145,6 @@ ul.main-menu {
 }
 
 .main-menu .item .item__contents .contents__texture {
-  background-color: orange;
   background: url(../images/main_menu_pattern.jpg);
   padding: 26px 0;
   font-size: 12px;
